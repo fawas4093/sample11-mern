@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import axios from "axios"
 import { useNavigate } from 'react-router-dom'
 import './FormStyle.css'
@@ -13,7 +13,7 @@ function Login() {
 
     const formSubmit = (e) => {
         e.preventDefault()
-        axios.post("http://localhost:5005/api/auth/login",data)
+        axios.post("https://sampl1-backend.onrender.com/api/auth/login",data)
         .then(res =>{
             console.log(res.data)
             localStorage.setItem("token", res.data.token)

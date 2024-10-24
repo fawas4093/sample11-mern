@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import axios from "axios"
 import { useNavigate } from 'react-router-dom'
 
@@ -13,7 +13,7 @@ function Register() {
 
     const formSubmit = (e) => {
       e.preventDefault()
-        axios.post("http://localhost:5005/api/auth/register", data)
+        axios.post("https://sampl1-backend.onrender.com/api/auth/register", data)
         .then(res =>{
             console.log(res)
             navigate("/login")

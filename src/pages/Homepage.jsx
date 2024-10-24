@@ -1,5 +1,5 @@
 import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useNavigate } from "react-router-dom";
 
 function Homepage() {
@@ -14,7 +14,7 @@ function Homepage() {
         'Content-Type': 'application/json',
         'authorization': `Bearer ${token}`
     }
-    axios.get("http://localhost:5005/api/todos", {headers})
+    axios.get("https://sampl1-backend.onrender.com/api/todos", {headers})
     .then(res => {
         setTodo(res.data)
     })
