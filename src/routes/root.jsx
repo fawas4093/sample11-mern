@@ -1,11 +1,12 @@
 import { Outlet } from "react-router-dom";
-import Navbar from "../pages/NavBar";
+import Navbar from '../pages/NavBar';
+
 
 export default function Root() {
     return (
       <>
       <header>
-        <Navbar/>
+        <Navbar />
       </header>
       <section>
       <Outlet />
