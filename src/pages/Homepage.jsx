@@ -14,7 +14,7 @@ function Homepage() {
         'Content-Type': 'application/json',
         'authorization': `Bearer ${token}`
     }
-    axios.get("https://sampl1-backend.onrender.com/api/todos", {headers})
+    axios.get("https://sampl1-backend-1.onrender.com/api/todos", {headers})
     .then(res => {
         setTodo(res.data)
     })

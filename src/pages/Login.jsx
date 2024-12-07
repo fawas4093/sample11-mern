@@ -13,6 +13,7 @@ function Login() {
 
     const formSubmit = (e) => {
         e.preventDefault()
+        
         axios.post("https://sampl1-backend.onrender.com/api/auth/login",data)
         .then(res =>{
             console.log(res.data)

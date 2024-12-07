@@ -13,7 +13,7 @@ function Register() {
 
     const formSubmit = (e) => {
       e.preventDefault()
-        axios.post("https://sampl1-backend.onrender.com/api/auth/register", data)
+        axios.post("https://sampl1-backend-1.onrender.com/api/auth/register", data)
         .then(res =>{
             console.log(res)
             navigate("/login")
